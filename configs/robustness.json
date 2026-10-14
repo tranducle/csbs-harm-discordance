@@ -1,0 +1,39 @@
+{
+  "input_csv": "data/processed/csbs_2024_2025_primary_business.csv",
+  "input_sha256_prefix": "57df72b0",
+  "primary_results": "results/primary/primary_results.json",
+  "expected_business_n": 4179,
+  "bootstrap_seed": 20271012,
+  "logistic_bootstrap_replicates": 2000,
+  "logistic_min_success_rate": 0.95,
+  "primary_formula": "outcome ~ metric * (x1_staff_awareness_test + x2_security_monitoring + C(survey_year) + C(size_cat) + C(sector_cat))",
+  "primary_terms": [
+    "metric:x1_staff_awareness_test",
+    "metric:x2_security_monitoring"
+  ],
+  "families": [
+    "logistic_marginal_standardization",
+    "year_specific_and_heterogeneity",
+    "weight_sensitivity",
+    "mutual_adjustment_ablation",
+    "adjustment_set_ablation",
+    "y2_leave_one_item_out",
+    "y4_consequence_definition",
+    "phishing_specificity",
+    "size_stability",
+    "leave_one_sector_out"
+  ],
+  "y2_substantive_items": [
+    "outcome1",
+    "outcome2",
+    "outcome3",
+    "outcome4",
+    "outcome5",
+    "outcome6",
+    "outcome7",
+    "outcome8",
+    "outcome11",
+    "outcome12",
+    "outcome13"
+  ]
+}

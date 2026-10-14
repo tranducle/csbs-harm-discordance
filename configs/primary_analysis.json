@@ -1,0 +1,31 @@
+{
+  "analysis": "primary_discordance",
+  "input_csv": "data/processed/csbs_2024_2025_primary_business.csv",
+  "input_sha256_prefix": "57df72b0",
+  "expected_business_n": 4179,
+  "expected_stacked_n": 8358,
+  "metric_definition": {
+    "0": "Identified incident (any business-level incident)",
+    "1": "Harmful incident (identified incident with at least one negative outcome)"
+  },
+  "primary_predictors": [
+    "x1_staff_awareness_test",
+    "x2_security_monitoring"
+  ],
+  "controls": [
+    "survey_year",
+    "size_cat",
+    "sector_cat"
+  ],
+  "formula": "outcome ~ metric * (x1_staff_awareness_test + x2_security_monitoring + C(survey_year) + C(size_cat) + C(sector_cat))",
+  "weight": "survey_weight",
+  "cluster": "record_id",
+  "primary_terms": [
+    "metric:x1_staff_awareness_test",
+    "metric:x2_security_monitoring"
+  ],
+  "alpha": 0.05,
+  "multiplicity": "Holm across the two primary interaction tests",
+  "bootstrap_seed": 20271012,
+  "interpretation": "probability-scale adjusted association and difference in risk-difference associations"
+}

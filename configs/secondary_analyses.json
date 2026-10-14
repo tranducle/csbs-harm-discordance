@@ -1,0 +1,19 @@
+{
+  "input_csv": "data/processed/csbs_2024_2025_primary_business.csv",
+  "input_sha256_prefix": "57df72b0",
+  "expected_business_n": 4179,
+  "practices": [
+    "x1_staff_awareness_test",
+    "x2_security_monitoring"
+  ],
+  "conditional_harm_share": {
+    "formula": "y2_identified_harmful_incident ~ x1_staff_awareness_test + x2_security_monitoring + C(survey_year) + C(size_cat) + C(sector_cat)",
+    "alpha": 0.05,
+    "multiplicity": "Benjamini-Hochberg across the two practice p-values",
+    "bootstrap_seed": 20271012,
+    "bootstrap_replicates": 2000
+  },
+  "discordance_decomposition": {
+    "identity_tolerance": 1e-12
+  }
+}

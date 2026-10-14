@@ -1,0 +1,26 @@
+{
+  "mode": "official",
+  "replicates_failed": 0,
+  "replicates_requested": 2000,
+  "replicates_success": 2000,
+  "seed": 20271012,
+  "success_rate": 1.0,
+  "x1": {
+    "bootstrap_ci_high": -0.00688580977587945,
+    "bootstrap_ci_low": -0.10486112550414285,
+    "bootstrap_same_sign_share": 0.9865,
+    "bootstrap_se": 0.025181446001371947,
+    "point_discordance": -0.05583629480631959,
+    "point_y1_ame": 0.07307310352087448,
+    "point_y2_ame": 0.017236808714554894
+  },
+  "x2": {
+    "bootstrap_ci_high": -0.10872097591521075,
+    "bootstrap_ci_low": -0.19381946750901127,
+    "bootstrap_same_sign_share": 1.0,
+    "bootstrap_se": 0.021741129244050892,
+    "point_discordance": -0.1500547761096519,
+    "point_y1_ame": 0.19262495680290853,
+    "point_y2_ame": 0.04257018069325662
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "identity": "RD(Y2) - RD(Y1) = (s1 - 1)(p1 - p0) + p0 (s1 - s0)",
+  "input_sha256": "57df72b01f8ad9e08d81a1b2235b4407f569afa3ca365ddd101e64ea1844881b",
+  "practices": {
+    "x1_staff_awareness_test": {
+      "delta_unadjusted": -0.13870916899023836,
+      "identity_abs_error": 2.7755575615628914e-17,
+      "nesting_component": -0.1522476494116616,
+      "p0": 0.4288485176218791,
+      "p1": 0.6119908867674319,
+      "q0": 0.058804991064919945,
+      "q1": 0.10323819122023435,
+      "rd_y1_unadjusted": 0.18314236914555276,
+      "rd_y2_unadjusted": 0.044433200155314406,
+      "s0": 0.1371229901668193,
+      "s1": 0.1686923669166773,
+      "severity_component": 0.013538480421423214
+    },
+    "x2_security_monitoring": {
+      "delta_unadjusted": -0.19160324417543959,
+      "identity_abs_error": 0.0,
+      "nesting_component": -0.20477055496287508,
+      "p0": 0.3854729313952019,
+      "p1": 0.630497103435728,
+      "q0": 0.050159828102419375,
+      "q1": 0.10358075596750585,
+      "rd_y1_unadjusted": 0.24502417204052607,
+      "rd_y2_unadjusted": 0.053420927865086475,
+      "s0": 0.13012542260974885,
+      "s1": 0.1642842693536097,
+      "severity_component": 0.01316731078743549
+    }
+  },
+  "status_label": "post hoc descriptive decomposition; unadjusted weighted proportions; no inference"
+}

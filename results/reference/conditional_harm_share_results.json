@@ -1,0 +1,85 @@
+{
+  "boundary": "Conditioning on identified incidents is selection-sensitive; not causal; not supporting evidence for the primary discordance result.",
+  "descriptive": {
+    "n_by_year": {
+      "2024": 1111,
+      "2025": 1132
+    },
+    "n_conditional": 2243,
+    "n_harmful": 384,
+    "n_harmful_x1_staff_awareness_test_0": 189,
+    "n_harmful_x1_staff_awareness_test_1": 195,
+    "n_harmful_x2_security_monitoring_0": 143,
+    "n_harmful_x2_security_monitoring_1": 241,
+    "n_x1_staff_awareness_test_0": 1346,
+    "n_x1_staff_awareness_test_1": 897,
+    "n_x2_security_monitoring_0": 1043,
+    "n_x2_security_monitoring_1": 1200,
+    "weighted_harm_share_all": 0.14466205544455293,
+    "weighted_harm_share_x1_staff_awareness_test_0": 0.1371229901668193,
+    "weighted_harm_share_x1_staff_awareness_test_1": 0.1686923669166773,
+    "weighted_harm_share_x2_security_monitoring_0": 0.13012542260974885,
+    "weighted_harm_share_x2_security_monitoring_1": 0.1642842693536097
+  },
+  "formula": "y2_identified_harmful_incident ~ x1_staff_awareness_test + x2_security_monitoring + C(survey_year) + C(size_cat) + C(sector_cat)",
+  "input_csv": "data/processed/csbs_2024_2025_primary_business.csv",
+  "input_sha256": "57df72b01f8ad9e08d81a1b2235b4407f569afa3ca365ddd101e64ea1844881b",
+  "logistic_ame": {
+    "_meta": {
+      "replicates_failed": 0,
+      "replicates_requested": 2000,
+      "seed": 20271012
+    },
+    "x1_staff_awareness_test": {
+      "bootstrap_ci_high": 0.06782926250737238,
+      "bootstrap_ci_low": -0.026954020929469254,
+      "bootstrap_se": 0.023768151444913014,
+      "point_ame": 0.019342531433894534,
+      "replicates_success": 2000
+    },
+    "x2_security_monitoring": {
+      "bootstrap_ci_high": 0.06918282020291742,
+      "bootstrap_ci_low": -0.01270111182505051,
+      "bootstrap_se": 0.021118512036873986,
+      "point_ame": 0.02780913801760528,
+      "replicates_success": 2000
+    }
+  },
+  "lpm": {
+    "x1_staff_awareness_test": {
+      "bh_q": 0.39574331192176515,
+      "bh_reject": false,
+      "ci_high": 0.06546712271618851,
+      "ci_low": -0.02588461836351844,
+      "estimate": 0.019791252176335036,
+      "p_value": 0.39574331192176515,
+      "se": 0.0233044438061816
+    },
+    "x2_security_monitoring": {
+      "bh_q": 0.3573708980514585,
+      "bh_reject": false,
+      "ci_high": 0.06850423021207835,
+      "ci_low": -0.01275135934241731,
+      "estimate": 0.02787643543483052,
+      "p_value": 0.17868544902572925,
+      "se": 0.02072884762052502
+    }
+  },
+  "lpm_diagnostics": {
+    "condition_number": 16.753154935852645,
+    "n": 2243,
+    "n_clusters": 2243,
+    "prediction_max": 0.45972315721356904,
+    "prediction_min": 0.06934646106451631,
+    "prediction_out_of_range_rate": 0.0
+  },
+  "software": {
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "patsy": "1.0.3",
+    "python": "3.9.6",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.6"
+  },
+  "status_label": "secondary exploratory analysis, run after the primary and robustness results"
+}

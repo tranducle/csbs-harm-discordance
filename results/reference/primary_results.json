@@ -1,0 +1,117 @@
+{
+  "analysis": "primary_discordance",
+  "condition_number": 44.56714637957634,
+  "design_matrix_columns": [
+    "Intercept",
+    "C(survey_year)[T.2025]",
+    "C(size_cat)[T.2.0]",
+    "C(size_cat)[T.3.0]",
+    "C(size_cat)[T.4.0]",
+    "C(sector_cat)[T.2.0]",
+    "C(sector_cat)[T.3.0]",
+    "C(sector_cat)[T.4.0]",
+    "C(sector_cat)[T.5.0]",
+    "C(sector_cat)[T.6.0]",
+    "C(sector_cat)[T.7.0]",
+    "C(sector_cat)[T.8.0]",
+    "C(sector_cat)[T.9.0]",
+    "C(sector_cat)[T.10.0]",
+    "C(sector_cat)[T.11.0]",
+    "C(sector_cat)[T.12.0]",
+    "C(sector_cat)[T.13.0]",
+    "metric",
+    "metric:C(survey_year)[T.2025]",
+    "metric:C(size_cat)[T.2.0]",
+    "metric:C(size_cat)[T.3.0]",
+    "metric:C(size_cat)[T.4.0]",
+    "metric:C(sector_cat)[T.2.0]",
+    "metric:C(sector_cat)[T.3.0]",
+    "metric:C(sector_cat)[T.4.0]",
+    "metric:C(sector_cat)[T.5.0]",
+    "metric:C(sector_cat)[T.6.0]",
+    "metric:C(sector_cat)[T.7.0]",
+    "metric:C(sector_cat)[T.8.0]",
+    "metric:C(sector_cat)[T.9.0]",
+    "metric:C(sector_cat)[T.10.0]",
+    "metric:C(sector_cat)[T.11.0]",
+    "metric:C(sector_cat)[T.12.0]",
+    "metric:C(sector_cat)[T.13.0]",
+    "x1_staff_awareness_test",
+    "x2_security_monitoring",
+    "metric:x1_staff_awareness_test",
+    "metric:x2_security_monitoring"
+  ],
+  "design_matrix_p": 38,
+  "design_matrix_rank": 38,
+  "effects": {
+    "x1_discordance": {
+      "ci_high": -0.001951712989883593,
+      "ci_low": -0.09921426521625334,
+      "estimate": -0.050582989103068465,
+      "holm_p": 0.04148767026618623,
+      "holm_reject": true,
+      "p_value": 0.04148767026618623,
+      "se": 0.024812331500365402
+    },
+    "x1_y1_rd": {
+      "ci_high": 0.11924196913353269,
+      "ci_low": 0.022785663114173065,
+      "estimate": 0.07101381612385288,
+      "p_value": 0.003902217088925531,
+      "se": 0.02460665266815989
+    },
+    "x1_y2_rd": {
+      "ci_high": 0.04794866370822755,
+      "ci_low": -0.007087009666658723,
+      "estimate": 0.020430827020784414,
+      "p_value": 0.1456166246419891,
+      "se": 0.014039970583388432
+    },
+    "x2_discordance": {
+      "ci_high": -0.10811025390848708,
+      "ci_low": -0.1915404281864053,
+      "estimate": -0.1498253410474462,
+      "holm_p": 3.8593369523663015e-12,
+      "holm_reject": true,
+      "p_value": 1.9296684761831507e-12,
+      "se": 0.0212835988150815
+    },
+    "x2_y1_rd": {
+      "ci_high": 0.23405244401562408,
+      "ci_low": 0.15161120611086965,
+      "estimate": 0.19283182506324686,
+      "p_value": 4.783329768259829e-20,
+      "se": 0.02103131449226629
+    },
+    "x2_y2_rd": {
+      "ci_high": 0.0667728769744033,
+      "ci_low": 0.019240091057198053,
+      "estimate": 0.04300648401580068,
+      "p_value": 0.0003901574384550146,
+      "se": 0.012125933510038399
+    }
+  },
+  "formula": "outcome ~ metric * (x1_staff_awareness_test + x2_security_monitoring + C(survey_year) + C(size_cat) + C(sector_cat))",
+  "input_csv": "data/processed/csbs_2024_2025_primary_business.csv",
+  "input_sha256": "57df72b01f8ad9e08d81a1b2235b4407f569afa3ca365ddd101e64ea1844881b",
+  "max_abs_numpy_statsmodels_beta_diff": 4.440892098500626e-16,
+  "n_business": 4179,
+  "n_clusters": 4179,
+  "n_stacked": 8358,
+  "prediction_max": 1.030814170299971,
+  "prediction_min": 0.020683145705343353,
+  "prediction_out_of_range_n": 18,
+  "prediction_out_of_range_rate": 0.0021536252692031586,
+  "primary_terms": {
+    "x1_interaction_term": "metric:x1_staff_awareness_test",
+    "x2_interaction_term": "metric:x2_security_monitoring"
+  },
+  "software": {
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "patsy": "1.0.3",
+    "python": "3.9.6",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.6"
+  }
+}

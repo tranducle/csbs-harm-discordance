@@ -1,0 +1,16 @@
+# Restricted survey data: obtain from the UK Data Service (see DATA.md)
+data/
+
+# Regenerated outputs; the reference run is kept in results/reference/
+results/*
+!results/reference/
+!results/README.md
+
+# Environments, caches, secrets
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.env.*
+.DS_Store

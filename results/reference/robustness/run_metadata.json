@@ -1,0 +1,17 @@
+{
+  "config_sha256": "8f7013548fbcf93ed7356097ac0cd02d8ab102835a958776577267a6262281e9",
+  "input_sha256": "57df72b01f8ad9e08d81a1b2235b4407f569afa3ca365ddd101e64ea1844881b",
+  "logit_bootstrap_failures": 0,
+  "logit_bootstrap_requested": 2000,
+  "logit_bootstrap_success": 2000,
+  "lpm_runs": 37,
+  "mode": "official",
+  "primary_result_sha256": "03931a0e2e66e256911725dece421a8f0ad762c942ff018097df925e3b7b4f88",
+  "software": {
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "python": "3.9.6",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.6"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "2024": {
+    "asked_without_incident": 0,
+    "business_incident_base": 1111,
+    "business_pct": 13.34,
+    "checks": {
+      "base_matches_published": true,
+      "business_pct_matches_published": true,
+      "coding_clean": true,
+      "large_pct_matches_published": true,
+      "processed_matches_fresh": true,
+      "routing_clean": true
+    },
+    "incident_asked": 1856,
+    "incident_not_asked": 0,
+    "incident_with_no_code": 0,
+    "large_business_pct": 31.67,
+    "none_or_dk_with_consequence": 0,
+    "official_outcome_any_note": "variable not present in this release",
+    "official_outcome_any_records": 0,
+    "processed_rows": 3434,
+    "processed_vs_fresh_mismatch": 0,
+    "processed_vs_fresh_missing_pattern_equal": true,
+    "published": {
+      "base_businesses": 1111,
+      "business_pct": 13,
+      "large_business_pct": 32
+    },
+    "raw_rows": 3434
+  },
+  "2025": {
+    "asked_without_incident": 1,
+    "business_incident_base": 1132,
+    "business_pct": 15.66,
+    "checks": {
+      "business_pct_matches_published": true,
+      "coding_clean": true,
+      "official_outcome_any_match": true,
+      "processed_matches_fresh": true,
+      "routing_clean": true
+    },
+    "incident_asked": 1903,
+    "incident_not_asked": 0,
+    "incident_with_no_code": 0,
+    "large_business_pct": 29.4,
+    "none_or_dk_with_consequence": 0,
+    "official_outcome_any_mismatch": 0,
+    "official_outcome_any_records": 1903,
+    "processed_rows": 3835,
+    "processed_vs_fresh_mismatch": 0,
+    "processed_vs_fresh_missing_pattern_equal": true,
+    "published": {
+      "business_pct": 16
+    },
+    "raw_rows": 3835
+  },
+  "failed_checks": [],
+  "status": "PASS"
+}

@@ -1,0 +1,33 @@
+{
+  "business_n": 4179,
+  "input_sha256": "57df72b01f8ad9e08d81a1b2235b4407f569afa3ca365ddd101e64ea1844881b",
+  "pooled": {
+    "x1_prevalence_weighted": 0.18022387652313657,
+    "x1_x2_weighted_corr": 0.30882503390870225,
+    "x2_prevalence_weighted": 0.31173338252148713,
+    "y1_prevalence_weighted": 0.4618551453449219,
+    "y2_prevalence_weighted": 0.06681291464323914
+  },
+  "year": {
+    "2024": {
+      "kish_ess": 1397.5753712588557,
+      "n": 2000,
+      "weight_mean": 0.9999809390000001,
+      "weight_sum": 1999.961878,
+      "x1_prevalence_weighted": 0.17636913277203975,
+      "x2_prevalence_weighted": 0.3302368711450009,
+      "y1_prevalence_weighted": 0.4966919809458488,
+      "y2_prevalence_weighted": 0.06624387717454282
+    },
+    "2025": {
+      "kish_ess": 1325.0722046974845,
+      "n": 2179,
+      "weight_mean": 0.9994980638733366,
+      "weight_sum": 2177.9062811800004,
+      "x1_prevalence_weighted": 0.18376367096620835,
+      "x2_prevalence_weighted": 0.2947417092907252,
+      "y1_prevalence_weighted": 0.4298646305307314,
+      "y2_prevalence_weighted": 0.06733545927905774
+    }
+  }
+}
